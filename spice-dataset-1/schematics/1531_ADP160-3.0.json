@@ -1,0 +1,129 @@
+{
+  "modules": {
+    "circuit": {
+      "cells": {
+        "gnd": {
+          "type": "gnd",
+          "port_directions": {
+            "A": "input"
+          },
+          "connections": {
+            "A": [
+              2
+            ]
+          },
+          "attributes": {
+            "name": "GND"
+          }
+        },
+        "V1": {
+          "type": "v",
+          "port_directions": {
+            "+": "output",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              4
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "V1",
+            "value": "5"
+          }
+        },
+        "C1": {
+          "type": "c_h",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              6
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "C1",
+            "value": "1\u00b5"
+          }
+        },
+        "Rload": {
+          "type": "r_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              6
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "Rload",
+            "value": "300"
+          }
+        },
+        "V2": {
+          "type": "v",
+          "port_directions": {
+            "+": "output",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              5
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "V2",
+            "value": "PULSE(0 5 100u 50n 50n 2.5m)"
+          }
+        },
+        "XU1": {
+          "type": "generic",
+          "port_directions": {
+            "1": "input",
+            "2": "input",
+            "3": "input",
+            "4": "output",
+            "5": "output"
+          },
+          "connections": {
+            "1": [
+              4
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              5
+            ],
+            "4": [
+              6
+            ],
+            "5": [
+              3
+            ]
+          },
+          "attributes": {
+            "ref": "XU1",
+            "K": "333.3u"
+          }
+        }
+      }
+    }
+  }
+}

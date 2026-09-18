@@ -1,0 +1,66 @@
+{
+  "modules": {
+    "circuit": {
+      "cells": {
+        "gnd": {
+          "type": "gnd",
+          "port_directions": {
+            "A": "input"
+          },
+          "connections": {
+            "A": [
+              2
+            ]
+          },
+          "attributes": {
+            "name": "GND"
+          }
+        },
+        "XU2": {
+          "type": "generic",
+          "port_directions": {
+            "1": "input",
+            "2": "input",
+            "3": "output"
+          },
+          "connections": {
+            "1": [
+              4
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              6
+            ]
+          },
+          "attributes": {
+            "ref": "XU2"
+          }
+        },
+        "XU1": {
+          "type": "generic",
+          "port_directions": {
+            "1": "input",
+            "2": "input",
+            "3": "output"
+          },
+          "connections": {
+            "1": [
+              3
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              5
+            ]
+          },
+          "attributes": {
+            "ref": "XU1"
+          }
+        }
+      }
+    }
+  }
+}

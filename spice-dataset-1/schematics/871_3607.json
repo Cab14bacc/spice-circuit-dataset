@@ -1,0 +1,363 @@
+{
+  "modules": {
+    "circuit": {
+      "cells": {
+        "gnd": {
+          "type": "gnd",
+          "port_directions": {
+            "A": "input"
+          },
+          "connections": {
+            "A": [
+              2
+            ]
+          },
+          "attributes": {
+            "name": "GND"
+          }
+        },
+        "XU1": {
+          "type": "generic",
+          "port_directions": {
+            "1": "input",
+            "2": "input",
+            "3": "input",
+            "4": "input",
+            "5": "input",
+            "6": "input",
+            "7": "input",
+            "8": "input",
+            "9": "input",
+            "10": "output",
+            "11": "output",
+            "12": "output",
+            "13": "output",
+            "14": "output",
+            "15": "output",
+            "16": "output",
+            "17": "output"
+          },
+          "connections": {
+            "1": [
+              10
+            ],
+            "2": [
+              11
+            ],
+            "3": [
+              3
+            ],
+            "4": [
+              2
+            ],
+            "5": [
+              6
+            ],
+            "6": [
+              3
+            ],
+            "7": [
+              3
+            ],
+            "8": [
+              7
+            ],
+            "9": [
+              2
+            ],
+            "10": [
+              2
+            ],
+            "11": [
+              12
+            ],
+            "12": [
+              5
+            ],
+            "13": [
+              3
+            ],
+            "14": [
+              9
+            ],
+            "15": [
+              8
+            ],
+            "16": [
+              3
+            ],
+            "17": [
+              4
+            ]
+          },
+          "attributes": {
+            "ref": "XU1"
+          }
+        },
+        "V1": {
+          "type": "v",
+          "port_directions": {
+            "+": "output",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              3
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "V1",
+            "value": "12"
+          }
+        },
+        "L1": {
+          "type": "l_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              6
+            ],
+            "-": [
+              13
+            ]
+          },
+          "attributes": {
+            "ref": "L1",
+            "value": "4.7\u00b5",
+            "unknown_Rser": "20m"
+          }
+        },
+        "R1": {
+          "type": "r_h",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              13
+            ],
+            "-": [
+              8
+            ]
+          },
+          "attributes": {
+            "ref": "R1",
+            "value": "887K"
+          }
+        },
+        "C1": {
+          "type": "c_h",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              13
+            ],
+            "-": [
+              8
+            ]
+          },
+          "attributes": {
+            "ref": "C1",
+            "value": "22p"
+          }
+        },
+        "R2": {
+          "type": "r_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              8
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "R2",
+            "value": "121K"
+          }
+        },
+        "C2": {
+          "type": "c_v",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              13
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "C2",
+            "value": "10\u00b5",
+            "unknown_V": "10",
+            "unknown_Irms": "8.919",
+            "unknown_Rser": "0.005",
+            "unknown_Lser": "0",
+            "unknown_mfg": "KEMET",
+            "unknown_pn": "C1210C106K8PAC",
+            "unknown_type": "X5R"
+          }
+        },
+        "L2": {
+          "type": "l_h",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              7
+            ],
+            "-": [
+              14
+            ]
+          },
+          "attributes": {
+            "ref": "L2",
+            "value": "4.7\u00b5",
+            "unknown_Rser": "20m"
+          }
+        },
+        "R3": {
+          "type": "r_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              14
+            ],
+            "-": [
+              9
+            ]
+          },
+          "attributes": {
+            "ref": "R3",
+            "value": "549K"
+          }
+        },
+        "C3": {
+          "type": "c_v",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              14
+            ],
+            "-": [
+              9
+            ]
+          },
+          "attributes": {
+            "ref": "C3",
+            "value": "22p"
+          }
+        },
+        "R4": {
+          "type": "r_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              9
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "R4",
+            "value": "121K"
+          }
+        },
+        "C4": {
+          "type": "c_h",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              14
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "C4",
+            "value": "10\u00b5",
+            "unknown_V": "10",
+            "unknown_Irms": "8.919",
+            "unknown_Rser": "0.005",
+            "unknown_Lser": "0",
+            "unknown_mfg": "KEMET",
+            "unknown_pn": "C1210C106K8PAC",
+            "unknown_type": "X5R"
+          }
+        },
+        "Rload1": {
+          "type": "r_h",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              13
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "Rload1",
+            "value": "8.33"
+          }
+        },
+        "Rload2": {
+          "type": "r_h",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              14
+            ],
+            "-": [
+              2
+            ]
+          },
+          "attributes": {
+            "ref": "Rload2",
+            "value": "5.5"
+          }
+        }
+      }
+    }
+  }
+}

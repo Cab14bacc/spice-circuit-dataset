@@ -1,0 +1,144 @@
+{
+  "modules": {
+    "circuit": {
+      "cells": {
+        "gnd": {
+          "type": "gnd",
+          "port_directions": {
+            "A": "input"
+          },
+          "connections": {
+            "A": [
+              8
+            ]
+          },
+          "attributes": {
+            "name": "GND"
+          }
+        },
+        "V1": {
+          "type": "v",
+          "port_directions": {
+            "+": "output",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              2
+            ],
+            "-": [
+              8
+            ]
+          },
+          "attributes": {
+            "ref": "V1",
+            "value": "PWL(0 0 1 10)"
+          }
+        },
+        "C1": {
+          "type": "c_v",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              7
+            ],
+            "-": [
+              8
+            ]
+          },
+          "attributes": {
+            "ref": "C1",
+            "value": "10\u00b5"
+          }
+        },
+        "Rload": {
+          "type": "r_v",
+          "port_directions": {
+            "+": "input",
+            "-": "input"
+          },
+          "connections": {
+            "+": [
+              7
+            ],
+            "-": [
+              8
+            ]
+          },
+          "attributes": {
+            "ref": "Rload",
+            "value": "500"
+          }
+        },
+        "C2": {
+          "type": "c_v",
+          "port_directions": {
+            "+": "input",
+            "-": "output"
+          },
+          "connections": {
+            "+": [
+              7
+            ],
+            "-": [
+              6
+            ]
+          },
+          "attributes": {
+            "ref": "C2",
+            "value": ".01\u00b5"
+          }
+        },
+        "XU1": {
+          "type": "generic",
+          "port_directions": {
+            "1": "input",
+            "2": "input",
+            "3": "input",
+            "4": "input",
+            "5": "input",
+            "6": "output",
+            "7": "output",
+            "8": "output",
+            "9": "output"
+          },
+          "connections": {
+            "1": [
+              7
+            ],
+            "2": [
+              7
+            ],
+            "3": [
+              6
+            ],
+            "4": [
+              8
+            ],
+            "5": [
+              2
+            ],
+            "6": [
+              4
+            ],
+            "7": [
+              5
+            ],
+            "8": [
+              2
+            ],
+            "9": [
+              3
+            ]
+          },
+          "attributes": {
+            "ref": "XU1"
+          }
+        }
+      }
+    }
+  }
+}
